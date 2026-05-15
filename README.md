@@ -4,17 +4,6 @@
 
 ---
 
-## What Was Wrong in v2 — Root Cause Analysis
-
-### The Actual Bug
-
-```
-❌  Sentinel-1 SAR also failed: "No variable named 'x'.
-    Variables on the dataset include ['latitude', 'longitude', 'spatial_ref', 'time', 'vv', 'vh']"
-```
-
-**Root cause:** `odc-stac` names spatial coordinates differently based on CRS type:
-
 | CRS type | CRS example | Coordinate names |
 |---|---|---|
 | **Geographic** (lat/lon) | `EPSG:4326` | `latitude`, `longitude` |
