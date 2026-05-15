@@ -1,0 +1,5 @@
+roboflow_training_data/
+image.png
+PLAN.TXT
+.venv/
+__pycache__/
